@@ -1,2 +1,2 @@
-Ollama seems to be the best tool for us to use in order to interact with various LLMs for testing. This testing, paired with online research, has pointed us to gemma2. 
+Ollama seems to be the best tool for us to use in order to interact with various LLMs for testing. This testing, paired with online research, has pointed us to gemma2 as the best option for the LLM. 
 This is an open source LLM developed by Google that is able to translate between English and Mandarin. 
