@@ -1,2 +1,6 @@
 Ollama seems to be the best tool for us to use in order to interact with various LLMs for testing. This testing, paired with online research, 
 has pointed us to gemma2 as the best option for the LLM. This is an open source LLM developed by Google that is able to translate between English and Mandarin. 
+The LLM itself has three different versions that increase the complexity of its training: 2b, 9b, and 27b. 
+
+To pull data from the search engines themselves we are going to need to scrape them becaue we can't get access to the APIs. We are currently hopeful a tool called LLM-AXE will allow us to 
+accomplish this goal. 
