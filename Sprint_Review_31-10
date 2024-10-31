@@ -1,3 +1,4 @@
+-- Only Mila was here today --
 Be able to search by event. SUch as Hashtag xxxxxxx. Look for codewords that may be used to mask protests or things like that. 
 Add geotagging to know where the articles come from. 
 Filter for general inforamtion about AI in China. 
@@ -11,3 +12,5 @@ Could we add personas to search as to give more tailored results to certain quer
 The intelligence communiity will use this to try and identify trends to see if there are deviations from the norm. 
  - They look for tones and emotions that are in the articles. This makes translation very important. 
  - Can we use the LLM to recognize the emotion in the article (sentiment) before translation. 
+
+The storing of WeChat articles will be incredibly helpful. 
