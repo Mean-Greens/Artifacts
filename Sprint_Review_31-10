@@ -4,3 +4,10 @@ Filter for general inforamtion about AI in China.
 
 
 Could we add personas to search as to give more tailored results to certain queries?
+ - Scientist
+ - Political Analyst
+ - Protests
+
+The intelligence communiity will use this to try and identify trends to see if there are deviations from the norm. 
+ - They look for tones and emotions that are in the articles. This makes translation very important. 
+ - Can we use the LLM to recognize the emotion in the article (sentiment) before translation. 
