@@ -27,13 +27,27 @@ def home():
 def results():
     return render_template("results.html")
  
-@app.route("/search")
+@app.route("/search", methods=['GET', 'POST'])
 def search():
-    return render_template("search.html")
+    if request.method == "GET":
+        return render_template('search.html')
+    #once they search
+    elif request.method == "POST":
+        search_term = request.form['search_term']
+        #results = get_results(search_term)
+        #return render_template('results.html', results=results)
+        return render_template('results.html')
 
-@app.route("/filters")
+@app.route("/filters", methods=['GET', 'POST'])
 def filters():
-    return render_template("filters.html")
+    if request.method == "GET":
+        return render_template('filters.html')
+    #once they search
+    elif request.method == "POST":
+        search_term = request.form['search_term_1']
+        #results = get_results(search_term)
+        #return render_template('results.html', results=results)
+        return render_template('results.html')
 
 @app.route("/doc")
 def doc():
