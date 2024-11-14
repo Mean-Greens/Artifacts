@@ -1,0 +1,27 @@
+PS C:\Capstone\Tool> python3 .\main.py
+
+        ******************************************************************
+        Welcome to the online chat demo. 
+        If the AI is unable to answer your question, it will use the internet to answer.
+        Otherwise, it will answer using its own knowledge base.
+        Type 'exit' to exit.
+        ******************************************************************
+User: Tell me about the Shenyin Special Investigation Team
+神yin 特殊調查隊
+["https://mp.weixin.qq.com/s?src=11&timestamp=1731597888&ver=5628&signature=Mr7Vd3wWYCCWk1ytS*LbJ5CGYzPa4F8PNGH*BF8eE7lXRf8D0spbzGodJBd*1yrPMn1BDC8v2iMDEpx-lhs9qx1jnuUOO1WCASKNHcx*ZtKpnvjf1EN4EiSw3hyzPTzL&new=1", "https://mp.weixin.qq.com/s?src=11&timestamp=1731597888&ver=5628&signature=NQVHEUrF0iwoq3Kav15f4gGiW5oWptTBvVfkyBJepFEC1SJhh*KUvDY6FSj6ATfMc1LMq0JkmWIubqwfJn2IarZ5snukamzmKSc5HP7KFR1awkGH4iEwQ5MCXfRL9IVV&new=1", "https://mp.weixin.qq.com/s?src=11&timestamp=1731597888&ver=5628&signature=coD4KIGvzQBnUuzkozBFyCDogQ7ITMJ1aViVMosEfF0tl59soi7-O5qZoottd8Bzb8b89zPIrz1*mLbky1gDlTO51OyV3KUFAPF69PsWM3oLry3wL0A4j553ff*RpYO4&new=1", "https://mp.weixin.qq.com/s?src=11&timestamp=1731597888&ver=5628&signature=ozPZ3GtC026cdh*lJ3T8s*rfMURDTE424gH81m2QjEcGj*OZTOCy32NtYitwZtq079R2t7OBt7MI1BVii3jNe6WcVR2w7Y7F6hPk2pXLGrbXBIfGO6bHH-64g9zrdTgN&new=1", "https://mp.weixin.qq.com/s?src=11&timestamp=1731597888&ver=5628&signature=gkJ0j3iM8LmJiPwCY7ztDbxccVyjHd4FUUIGQ4Q8PNeMdjtFXObIGHw0s7j*OxrKnpFWlT4HMf79hdPq9NrcbBbsVajwD3ChI*FsZzcLgbc1CvGOMmYDpzYsRi2Is9qg&new=1", "https://mp.weixin.qq.com/s?src=11&timestamp=1731597888&ver=5628&signature=JkXJHFTVNE*BB9yPOwaQiGtoI1yoldN0WnstkmONVz-y0GJEJ5hkRG7XYw6h6nrze2powhNNRbWRDk-W3IgPKnJz6Sa2MBLHPdBSOlpN3wokFnxr4G9nWTT2QsXCQ0gy&new=1", "https://mp.weixin.qq.com/s?src=11&timestamp=1731597888&ver=5628&signature=t7LLqWhBV7r3u0zGkAw9XSLnanUvUuP0seWpcbh-zcP5sZKnAT9sxzaZjv0d4MsOdQF3nxIKLo5efaIhIZndOVqlpbU3R-qJ0kitAQWqvH40*Ea6shXEw33KvjMv7h68&new=1", "https://mp.weixin.qq.com/s?src=3&timestamp=1731597888&ver=1&signature=TTOIKM3z9UGofhPWAyyX3oWbDSBr*rOd9ZVOFD8UAUAaisyf6mRD*Hd*bsrFOPDzDWQIWoSCrlDjRX1tBSGn9N2LerhMi0qXBAjsYUA0UmQEFuOw9oL0JBu1L6R96xHiUlRd5rrDcBtpbUcFjZ6VliPTAPzVSWwImiNpmA0Seb8=", "https://mp.weixin.qq.com/s?src=11&timestamp=1731597888&ver=5628&signature=m73d2ZPBTVz1YUmE2VBqJX-pj7Rzgi82k9Grhomde7sCdqUbi7rU11V42Eaxp-r-Ijpw5c2hNXTg9MR7dyDLcn*Yje2*1cEX6R1xOQQzncngl2vwUBh2Lgpum9Xs3bZr&new=1", "https://mp.weixin.qq.com/s?src=11&timestamp=1731597888&ver=5628&signature=k7igiR-QBayIspYQ97WNVEvuZHO0fUceVmMc8Ojv1r2NYO9o3n0YR9yBaoNOvxG2t3Utyux6qD1IX3UgZzj38HJ9Dc-Wl-ipEsrtXLpCPtcMZMdVrcqMo4U*9ATCiuIy&new=1"]    
+https://mp.weixin.qq.com/s?src=11&timestamp=1731597888&ver=5628&signature=Mr7Vd3wWYCCWk1ytS*LbJ5CGYzPa4F8PNGH*BF8eE7lXRf8D0spbzGodJBd*1yrPMn1BDC8v2iMDEpx-lhs9qx1jnuUOO1WCASKNHcx*ZtKpnvjf1EN4EiSw3hyzPTzL&new=1
+
+AI: Based on information from the internet, I cannot find any data or links related to a "Shenyin Special Investigation Team".  It is possible that this term is:     
+
+* **Specific to a specific organization or field:** It might be a team within a certain company, government agency, or research institution with a very specialized purpose.
+* **A localized or niche reference:** The term might be used in a very limited context, making it difficult for an internet search engine to find information about it.
+
+To help me find relevant information, could you please provide more details? For example:
+* Where did you encounter this term?  (e.g., news article, document, website)
+* What was the context of its mention? (e.g., a specific industry, location, or time period)
+
+
+With more context, I can try to find relevant information for you.
+
+
+User: exit
