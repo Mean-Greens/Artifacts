@@ -1,0 +1,11 @@
+PS C:\Capstone\Tool> python3 .\Sogou_Search_Scraper.py
+https://mp.weixin.qq.com/s?src=11&timestamp=1731599579&ver=5628&signature=2*o6OdUVCaGVyFmv3bI3QBYpxQ5y9-ESTXOQuWG2KcMg2w*K7NwXETkbUKfQOKCmKrAJ0bMkkqQx6NfNYB4ynoP44NkjKGF2cuXhJU66bzlMoW1zcjWB5chdCIhlIpVo&new=1
+https://mp.weixin.qq.com/s?src=11&timestamp=1731599579&ver=5628&signature=oKl1U77Tzb9EX9DfHMhUbtMJG19nfrNZUCbfq3h4cr0IgYrPh6iWCAA3g7ldgXKyr*SUu95NBO7CgNt*0qfh0pOdilNshSKftb31NbKQ4EJ3gl6hHTAFuClCaENBln-s&new=1
+https://mp.weixin.qq.com/s?src=11&timestamp=1731599579&ver=5628&signature=zi5YO4Xn-4Y4PgXeRkhNPetLDSoHb16OmzK*Qvtus1QkxGsaSXjw7POACrjIrV9EAjIsT4xyokI1My2*JkFpy*Ve0-LtnfOHpWFgG8HybsAnamyMHbtGRZQYysierq71&new=1
+https://mp.weixin.qq.com/s?src=11&timestamp=1731599579&ver=5628&signature=sVCfLg0JNI0wRaE7dLiK6BOz-92uYn5QvoQDGk0NQtOd48ZbBI8k-PURwYyBWybkJdYF74fX74MfoLr30HjcIkwFRvHve0GycaOQJj23wX*0nTJEjHZe-ONltvbHk95-&new=1
+https://mp.weixin.qq.com/s?src=11&timestamp=1731599579&ver=5628&signature=N9jOveEJccYKL1E8pgw46hLKlpo4DklkOyzFj6uW6Ez5LlexcEtmKE74s3XxH8qcdrIZMd1ZGCP4MQmr0yQNVu3fZ9bZwJDm*jqPJz0vO5is-Jai4K5BSptKUZsUuV0H&new=1
+https://mp.weixin.qq.com/s?src=11&timestamp=1731599579&ver=5628&signature=8Qp07G6KvuqCTjW4Sy11-cyqmnzQdqcKJz8zOX0rz30rUVeU6jCLGGxCM5EF6Z3giOM1kZIe-G*NYc6lmQg*Qg63URuSIK-LinN-Cluyo7T-cU1-sJxolwNeZKlxnYF9&new=1
+https://mp.weixin.qq.com/s?src=3&timestamp=1731599579&ver=1&signature=lK22EXhC2g2EVJfdP6lV7DwZn22aBCfmZ6T-3E9VuTQxnHlyhC6IJ*w9i69KSwRQNct7aDLInQ-2iHVZV0nWY8eJ-iVYQdlWrL-nmpDpNXGbRC*WsKSmGpMiOFswtwEiTX-Lg7S2vJbbRjDOXAFkCe1gPIZ0IHndgi2dX792a4k=
+https://mp.weixin.qq.com/s?src=11&timestamp=1731599579&ver=5628&signature=jiMW*Snl-uVtt1CFZT1R1A9iFc0h*3E6bE00PR6*l4N4uKJOolV7*nyyhhClQK-J1CKXA-NjdQW-9kMdpzcvKsFfgDty6Thmis3hqavUEYXR3WGDJLn4-lSTLohhgcJ3&new=1
+https://mp.weixin.qq.com/s?src=3&timestamp=1731599579&ver=1&signature=QHCEdkP-Ef0Epk5pgSP3Mgel1zf0hU4PiWj2XjZvjvxGWQpreSJEqO7FhAeyoZ796axPEXb03*R44LWpDc2kdPmj8N59G6rwReVX4GcXRf9hmfFjhlFAgxd*uonUnJh6C7L4-eHFWUYzoQ3ZEe-oj-2yQMeluZ5WgzIpefNBwbk=
+https://mp.weixin.qq.com/s?src=11&timestamp=1731599579&ver=5628&signature=THxzo0LE0g5Lg0STmIbNT*L0Au0Jry1jilNroDS0hJFeS9NPM7r1lJHzEJM7VKZvwAI*sTOzdZYimJwjy0fc4m8gAWEKlUEbrPK4JlFxOv6p9FO1dJ25r*5lpWR1OLPc&new=1
