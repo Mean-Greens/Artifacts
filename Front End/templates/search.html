@@ -37,7 +37,7 @@
     <div class="search-container">
         <body>
             <form action="/search" method="POST">
-                <input type="text" id="search_term" name="search_term" placeholder="Enter search query">
+                <input type="text" id="search_term" name="search_term" required pattern="[A-Za-z]+" maxlength="50" placeholder="Enter search query">
                 <button type="submit">Search</button>
             </form>
         </body>

@@ -31,9 +31,14 @@ app = Flask(__name__)
 def home():
     return render_template("search.html")
 
-@app.route("/newword")
+@app.route("/newword", methods=['GET', 'POST'])
 def newword():
-    return render_template("addtowordlist.html")
+    if  request.method == "GET":
+        return render_template("addtowordlist.html")
+    elif request.method == "POST":
+        #search_term = request.form['word']
+        #results = get_results(word)
+        return render_template("wordlist.html")
 
 @app.route("/wordlist")
 def wordlist():
