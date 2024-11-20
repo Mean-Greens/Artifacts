@@ -198,3 +198,34 @@ button:hover {
     padding: 10px 0;
   }
   
+  /*stuff for the word list*/
+  body {
+    font-family: Arial, sans-serif;
+}
+.alphabet-navigation {
+    text-align: center;
+    margin: 20px 0;
+}
+.alphabet-navigation a {
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
+    color: #007BFF;
+}
+.alphabet-navigation a:hover {
+    color: #0056b3;
+}
+.list-section {
+    margin-top: 30px;
+}
+.list-section h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin: 5px 0;
+}
