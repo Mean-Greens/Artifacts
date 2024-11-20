@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search</title>
+    <title>Alphabetized List</title>
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <header>
@@ -32,15 +31,13 @@
         </ul>
     </nav>
 </header>
-<h1>Search</h1>
+<h1>Add a Word</h1>
 <div class="container-a">
     <div class="search-container">
-        <body>
-            <form action="/search" method="POST">
-                <input type="text" id="search_term" name="search_term" placeholder="Enter search query">
-                <button type="submit">Search</button>
-            </form>
-        </body>
+        <form action="/newword" method="post">
+            <label for="word">Add a Word:</label>
+            <input type="text" id="word" name="word" required pattern="[A-Za-z]+" maxlength="50">
+            <button type="submit">Submit</button>
+        </form>
     </div>
 </div>
-</html>

@@ -1,5 +1,5 @@
 import os
-from flask import Flask, session, render_template, request, redirect, url_for, flash
+from flask import Flask, session, render_template, request, redirect, url_for, flash #CSRFProtect
 from dotenv import load_dotenv
 import psycopg2
 import hashlib
@@ -7,6 +7,9 @@ import hashlib
 
 
 app = Flask(__name__)
+#app.config['SECRET_KEY'] = 'your-secret-key'  # Replace with a strong secret key
+#csrf = CSRFProtect(app)
+
 
 # ------------------------ Database connection stuff, but no dastabse so commented out to limit bugs for now ------------------------ #
 
@@ -27,6 +30,10 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return render_template("search.html")
+
+@app.route("/newword")
+def newword():
+    return render_template("addtowordlist.html")
 
 @app.route("/wordlist")
 def wordlist():

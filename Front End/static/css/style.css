@@ -150,13 +150,110 @@ button:hover {
   nav ul li {
     display: inline;
     margin-right: 20px;
+    position: relative;
   }
   
   nav ul li a {
-    color: #fff;
     text-decoration: none;
-    margin-left: 10px;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    background-color: #023020;
   }  
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+nav ul li a:hover {
+    background-color: #45a049;
+}
+
+/* Dropdown Menu Styling */
+nav ul li ul {
+    display: none; /* Hide dropdown initially */
+    position: absolute;
+    top: 100%; /* Place it directly below the parent item */
+    left: 0;
+    background-color: #023020; /* Dark green background */
+    color: white;
+    z-index: 1000;
+    width: 100%;
+}
+nav ul li ul li {
+    width: 100%;
+}
+nav ul li ul li a {
+    padding: 10px 20px;
+    color: white; /* White text for dropdown items */
+    background-color: #023020; /* Dark green dropdown background */
+    border-bottom: 1px solid #003300;
+}
+nav ul li ul li a:hover {
+    background-color: #45a049;
+}
+
+/* Show Dropdown on Hover */
+nav ul li:hover ul {
+    display: block;
+}
+
+/* Responsive Styling for Small Screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+    }
+    nav ul li {
+        width: 100%; /* Full-width items */
+    }
+    nav ul li ul {
+        position: relative; /* Reposition dropdown */
+        top: 0;
+        left: 0;
+    }
+  }
+
+  /* Styling for Items with Dropdown */
+.has-dropdown > a {
+  position: relative; /* For positioning the arrow */
+  padding-right: 30px; /* Add space for the arrow */
+}
+
+/* Arrow Styling */
+.has-dropdown > a::after {
+  content: "▼"; /* Unicode for a down arrow */
+  position: absolute;
+  right: 10px; /* Position the arrow on the right */
+  top: 50%; /* Vertically center the arrow */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  font-size: 12px; /* Adjust size as needed */
+  color: white; /* Match text color */
+}
+
+/* Hover Effect for Arrow */
+.has-dropdown:hover > a::after {
+  color: #003300; /* Change arrow color on hover */
+}
+
+/* Optional: Arrow Rotation on Hover */
+.has-dropdown:hover > a::after {
+  transform: translateY(-50%) rotate(180deg); /* Rotate the arrow upwards */
+  transition: transform 0.2s ease; /* Smooth rotation */
+}
+
+
+
+
+
+
+
+
+
+
   body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9; /* Light yellow */
