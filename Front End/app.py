@@ -15,20 +15,20 @@ app.secret_key = os.getenv("SECRET")
 
 
 # Enforce user authentication on each request
-@app.before_request
-def default_login_required():
-    # exclude 404 errors and static routes
-    # uses split to handle blueprint static routes as well
-    if not request.endpoint or request.endpoint.rsplit('.', 1)[-1] == 'static':
-        return
+# @app.before_request
+# def default_login_required():
+#     # exclude 404 errors and static routes
+#     # uses split to handle blueprint static routes as well
+#     if not request.endpoint or request.endpoint.rsplit('.', 1)[-1] == 'static':
+#         return
 
-    view = app.view_functions[request.endpoint]
+#     view = app.view_functions[request.endpoint]
 
-    if getattr(view, 'login_exempt', False):
-        return
+#     if getattr(view, 'login_exempt', False):
+#         return
 
-    if 'userid' not in session:
-        return redirect(url_for('login'))
+#     if 'userid' not in session:
+#         return redirect(url_for('login'))
 
 def get_db_connection():
    conn = psycopg2.connect(
@@ -83,18 +83,23 @@ def get_words_in_list(id):
 def home():
     return render_template("search.html")
 
-@app.route("/newword", methods=['GET', 'POST'])
-def newword():
-    if  request.method == "GET":
-        return render_template("addtowordlist.html")
+#@app.route("/newword", methods=['GET', 'POST'])
+#def newword():
+    #if  request.method == "GET":
+        #return render_template("addtowordlist.html")
+    #elif request.method == "POST":
+        #search_term = request.form['word']
+        #results = get_results(word)
+        #return render_template("wordlist.html")
+
+@app.route("/wordlist", methods=['GET', 'POST'])
+def wordlist():
+    if request.method == "GET":
+        return render_template("wordlist.html")
     elif request.method == "POST":
         #search_term = request.form['word']
         #results = get_results(word)
-        return render_template("wordlist.html")
-
-@app.route("/wordlist")
-def wordlist():
-    return render_template("wordlist.html")
+        return render_template("wordlist.html") 
 
 @app.route("/results")
 def results():
@@ -110,17 +115,24 @@ def search():
         #results = get_results(search_term)
         #return render_template('results.html', results=results)
         return render_template('results.html')
+    
 
-@app.route("/filters", methods=['GET', 'POST'])
-def filters():
-    if request.method == "GET":
-        return render_template('filters.html')
+
+@app.route("/list", methods=["GET"])
+def retrieve_lists():
+    lists = get_user_lists() # Call defined function to get all items
+    return render_template("personalwordlists.html", url=request.base_url, lists=lists)
+
+#@app.route("/filters", methods=['GET', 'POST'])
+#def filters():
+    #if request.method == "GET":
+        #return render_template('filters.html')
     #once they search
-    elif request.method == "POST":
-        search_term = request.form['search_term_1']
+    #elif request.method == "POST":
+        #search_term = request.form['search_term_1']
         #results = get_results(search_term)
         #return render_template('results.html', results=results)
-        return render_template('results.html')
+        #return render_template('results.html')
 
 @app.route("/doc")
 def doc():
@@ -266,20 +278,17 @@ def hash_password(password, salt=None):
     hashed_password = hashlib.pbkdf2_hmac('sha256', password.encode(), salt, 100000)
     return salt.hex(), hashed_password.hex()
 
-@app.route("/list", methods=["GET"])
-def retrieve_shelf():
-    lists = get_user_lists() # Call defined function to get all items
-    return render_template("personalwordlists.html", url=request.base_url, lists=lists)
 
-@app.route("/shelf/list/<id>", methods=['GET'])
-# FIXME only allow to work for logged in user w/ try catch
-def retrieve_list(id):
-    list = get_words_in_list(id)
-    list_info = get_list_info(id)
-    url=request.base_url
-    # Just grab the domain, not anything including a slash or afterwards (for local only, won't work on server b/c htts:// #FIXME)
-    url = url.split("/")[0]
-    return render_template("listview.html", list=list, list_info=list_info, url=url) # Return the page to be rendered
+
+# @app.route("/shelf/list/<id>", methods=['GET'])
+# # FIXME only allow to work for logged in user w/ try catch
+# def retrieve_list(id):
+#     list = get_words_in_list(id)
+#     list_info = get_list_info(id)
+#     url=request.base_url
+#     # Just grab the domain, not anything including a slash or afterwards (for local only, won't work on server b/c htts:// #FIXME)
+#     url = url.split("/")[0]
+#     return render_template("idkyet.html", list=list, list_info=list_info, url=url) # Return the page to be rendered
 
 
 # ------------------------ END ROUTES ------------------------ #

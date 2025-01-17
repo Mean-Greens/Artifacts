@@ -16,21 +16,15 @@
             <li class="has-dropdown">
                 <a href="/search">Search</a>
                 <ul>
-                    <li><a href="/filters">Filters</a></li>
                     <li><a href="/results">Results</a></li>
                 </ul>
             </li>
             <li><a href="/doc">Documentation</a></li>
-            <li class="has-dropdown">
-                <a href="/wordlist">Wordlist</a>
-                <ul>
-                    <li><a href="/newword">New Word</a></li>
-                </ul>  
-            </li> 
+            <li><a href="/wordlist">Wordlist</a></li> 
             <li class="has-dropdown">
                 <a href="/login">Login</a>
                 <ul>
-                    <li><a href="/personalwordlists">My Wordlists</a></li>
+                    <li><a href="/list">My Wordlists</a></li>
                     <li><a href="/logout"><a>Logout</a></li>
                 </ul>
             </li>        </ul>
@@ -39,6 +33,7 @@
 <body>
     <div class="alphabet-navigation">
         <!-- Alphabet navigation -->
+         
         <span>
             <!-- Loop through alphabet links -->
             <a href="#A">A</a>
@@ -68,6 +63,13 @@
             <a href="#Y">Y</a>
             <a href="#Z">Z</a>
         </span>
+    </div>
+
+    <div class="search-container">
+        <form action="/newword" method="post">
+            <input type="text" id="word" name="word" required pattern="[A-Za-z]+" maxlength="50" placeholder="Add a Word">
+            <button type="submit">Submit</button>
+        </form>
     </div>
 
     <!-- Alphabetized list -->
