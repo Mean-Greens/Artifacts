@@ -39,6 +39,31 @@ def get_db_connection():
    )
    return conn
 
+def index():
+    filters = {}
+    if request.method == "POST":
+        # Handle form data
+        date_filter = request.form.get("date")
+        user_filter = request.form.get("user")
+        if date_filter:
+            filters['Date'] = date_filter
+        if user_filter:
+            filters['User'] = user_filter
+
+    return render_template("index.html", filters=filters)
+
+# Load words from the file
+def load_words():
+    with open("wordlist.txt", "r") as file:
+        words = file.read().splitlines()
+    sorted_words = sorted(words, key=str.lower)  # Sort case-insensitively
+    alphabetized_words = {}
+    for word in sorted_words:
+        first_letter = word[0].upper()
+        if first_letter not in alphabetized_words:
+            alphabetized_words[first_letter] = []
+        alphabetized_words[first_letter].append(word)
+    return alphabetized_words
 
 def get_user_lists():
      # Create a new database connection for each request
@@ -95,7 +120,8 @@ def home():
 @app.route("/wordlist", methods=['GET', 'POST'])
 def wordlist():
     if request.method == "GET":
-        return render_template("wordlist.html")
+            words_by_letter = load_words()
+            return render_template("index.html", words_by_letter=words_by_letter)
     elif request.method == "POST":
         #search_term = request.form['word']
         #results = get_results(word)

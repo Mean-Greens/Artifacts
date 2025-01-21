@@ -1,3 +1,71 @@
+
+
+.container {
+  text-align: center;
+}
+
+.search-section {
+  position: relative;
+  display: inline-block;
+}
+
+.search-bar {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.icon-wrapper {
+  position: absolute;
+  top: 60px; /* Adjust the vertical spacing beneath the search bar */
+  right: 0; /* Align to the right edge of the search bar */
+}
+
+.filter-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.filters-section {
+  display: none; /* Initially hidden */
+  margin-top: 20px;
+}
+
+.filter-input {
+  width: 200px;
+  height: 40px;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 14px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.apply-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #023020;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.apply-button:hover {
+  background-color: #45a049;
+}
+
+.filters-applied {
+  margin-top: 20px;
+}
+
+
 .container-a {
     width: 100%;
     height: 100vh; /* Set height of container to full viewport height */
